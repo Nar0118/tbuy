@@ -1,0 +1,73 @@
+@import "../../../styles/_variables.scss";
+
+.main {
+  padding: 20px;
+  padding-right: 15px;
+  box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  .container {
+    width: 100%;
+    max-height: 810px;
+    height: 100%;
+    margin-top: 14px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: $lightwhite;
+      margin: 18px 0;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      margin-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $black;
+      font-size: 14px;
+      line-height: 21px;
+
+      img {
+        width: 20px;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $lightblue;
+      border-radius: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $lightblack;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $lightwhite;
+      border-radius: 10px;
+    }
+  }
+
+  .scrollBarCover {
+    width: 50px;
+    height: 120px;
+    background: $white;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+  }
+}

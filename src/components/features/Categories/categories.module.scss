@@ -1,0 +1,35 @@
+@import '../../../styles/_variables.scss';
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+
+  .product {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    margin-top: 10px;
+    color: $black;
+    font-size: 14px;
+    line-height: 21px;
+
+    img {
+      width: 20px;
+    }
+
+    .companyName {
+      color: $black;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      word-wrap: break-word;
+      text-transform: capitalize;
+    }
+  }
+
+  .title {
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
